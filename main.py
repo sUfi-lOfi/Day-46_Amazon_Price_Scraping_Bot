@@ -4,6 +4,8 @@ import requests
 from fake_useragent import UserAgent
 import lxml
 import smtplib
+from dotenv import load_dotenv
+load_dotenv("./variables.env")
 #----------Header For Request-------------#
 header = {
     "User-Agent" : UserAgent().random,
